@@ -1,2 +1,5 @@
-# ALGORİTMA ANALİZİ VE TASARIMI DERSİ 1. KISA SINAV 2. BÖLÜM ÖDEVİ ZHU TAKAOKA  ALGORİTMASI
+# ALGORİTMA ANALİZİ VE TASARIMI DERSİ 1. KISA SINAV 2. BÖLÜM ÖDEVİ ZHU TAKAOKA ALGORİTMASI
  Algoritma analizi ve tasarımı 1. kısa sınav 2. bölüm ödevi Zhu-Takaoka Algoritması
+
+Boyer Moore algoritması, bir metin veya hedef dizgi (string) içerisinde bir başka dizginin aranması sırasında kullanılan algoritmalardan birisidir. Knuth Morris Prat algoritması ile en çok kullanılan arama algoritmalarındandır. Boyer Moore algoritması basitçe aranan metni hedef metin ile eşleştirir. Bulduğu sonuca göre de atlama gerçekleştirir. Ayrıca aranan metne göre de bir atlama tablosu (jump table) tutarak işlemi hızlandırır.
+Zhu- Takaoka algoritması, Boyer-Moore algoritmasının bir türevidir. Karşılaştırma işlemi sağdan sola doğru gerçekleştirilir. Boyer-Moore algoritmasındaki kötü karakter kaydırmasını hesaplamak için ardıl metin karakterlerini kullanır. İyi sonek önişlem safhası ise Boyer-Moore algoritmasındaki ile aynıdır. Kaydırma işlemini gerçekleştirirken bu iki kural arasındaki maksimum değerini seçerek kaydırma yapar. Önişlem safhasında zaman karmaşıklığı O(m+ σ^2 ) olur. Arama safhasında ise bu değer O(mn)’ dir.
